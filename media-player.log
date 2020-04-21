@@ -1,0 +1,56 @@
+$mediaplayerLoad
+$mediaplayerLoadedData
+$mediaplayerStart
+$mediaplayerPlay
+$mediaplayerPlaying
+$mediaplayerProgress 0.031972 596.474195
+$mediaplayerProgress 0.31068 596.474195
+$mediaplayerProgress 0.564716 596.474195
+$mediaplayerProgress 0.853854 596.474195
+$mediaplayerProgress 0.93492 596.474195
+
+Down
+
+$mediaplayerPause
+
+Down
+
+$mediaplayerPlay
+$mediaplayerPlaying
+$mediaplayerProgress 0.978344 596.474195
+$mediaplayerProgress 1.259433 596.474195
+$mediaplayerProgress 1.543537 596.474195
+
+Left
+
+$mediaplayerSeeking
+$mediaplayerProgress 11.746666 596.474195
+$mediaplayerSeeked
+$mediaplayerStart
+$mediaplayerPlaying
+$mediaplayerProgress 11.988344 596.474195
+$mediaplayerProgress 12.270158 596.474195
+
+Right
+
+$mediaplayerSeeking
+$mediaplayerProgress 2.270498 596.474195
+$mediaplayerSeeked
+$mediaplayerStart
+$mediaplayerPlaying
+$mediaplayerProgress 2.552402 596.474195
+$mediaplayerProgress 2.834216 596.474195
+
+Enter
+
+$mediaplayerStop
+$mediaplayerLoad
+$mediaplayerLoadedData
+$mediaplayerStart
+$mediaplayerPlay
+$mediaplayerPlaying
+$mediaplayerProgress 0 596.474195
+
+Up
+
+$mediaplayerStop
