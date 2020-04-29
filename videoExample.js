@@ -38,7 +38,7 @@ px.import({ scene:   'px:scene.1.js',
     else if (e.keyCode == keys.R ) {
       videoObject.position = 0;
     }
-    else if (e.keyCode == keys.D ) {
+    else if (e.keyCode == keys.D || e.keyCode == keys.ONE) {
       console.log(videoObject.duration);
     }
     else if (e.keyCode == keys.P ) {
