@@ -1,0 +1,6 @@
+{
+  "name": "media-player",
+  "identifier": "media-player",
+  "version": "1.0.0",
+  "icon": "./static/icon.png"
+}
