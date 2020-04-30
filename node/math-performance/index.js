@@ -1,12 +1,10 @@
 class Math2Impl {
-  static min(n, ...args) {
-    for (let arg of args) if (arg < n) n = arg
-    return n
+  static min(...args) {
+    return args.reduce((m, n) => (n < m ? n : m))
   }
 
-  static max(n, ...args) {
-    for (let arg of args) if (arg > n) n = arg
-    return n
+  static max(...args) {
+    return args.reduce((m, n) => (n > m ? n : m))
   }
 
   static abs(n) {
