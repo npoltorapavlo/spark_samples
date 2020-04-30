@@ -61,29 +61,25 @@ let testCompliance = () => {
 testCompliance()
 
 let testStress = (iter) => {
-  let test = (fn, ...args) => {
-    let testName = `${iter} x Math.${fn}`
+  let test = (math, fn, ...args) => {
+    let testName = `${iter} x ${math === Math2 ? 'Math2' : 'Math'}.${fn}`
     console.time(testName)
-    for (let i = 0; i < iter; ++i) Math[fn](...args)
-    console.timeEnd(testName)
-
-    testName = `${iter} x Math2.${fn}`
-    console.time(testName)
-    for (let i = 0; i < iter; ++i) Math2[fn](...args)
+    for (let i = 0; i < iter; ++i) math[fn](...args)
     console.timeEnd(testName)
   }
 
+  let maths = [Math, Math2]
   let fns = ['min', 'max']
   let ns = [2, 1]
   fns.forEach((fn) => {
-    test.apply(null, [fn].concat(ns))
+    maths.forEach((m) => test.apply(null, [m, fn].concat(ns)))
   })
 
   fns = ['abs', 'floor', 'round', 'ceil']
   ns = [1.657568]
   fns.forEach((fn) => {
     ns.forEach((n) => {
-      test(fn, n)
+      maths.forEach((m) => test(m, fn, n))
     })
   })
 }
