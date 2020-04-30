@@ -14,15 +14,15 @@ class Math2Impl {
   }
 
   static floor(n) {
-    return 0 | n
+    return 0 | (n - (n < 0 ? n !== ~~n : 0))
   }
 
   static round(n) {
-    return 0 | (n + 0.5)
+    return 0 | (n + (n < 0 ? -0.5 : 0.5))
   }
 
   static ceil(n) {
-    return 0 | (n + (n !== ~~n))
+    return 0 | (n + (n > 0 ? n !== ~~n : 0))
   }
 }
 
