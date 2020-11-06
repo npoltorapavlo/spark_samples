@@ -13,8 +13,10 @@ app.get('/', (req, res) => {
   res.send('GET')
 })
 
-app.post('/', (req, res) => {
-  res.send('POST')
+app.post('/:filename', (req, res) => {
+  req.pipe(fs.createWriteStream(`${pathForUploads}/${req.params.filename}`))
+
+  req.on('end', () => res.status(200).end());
 })
 
 app.put('/:filename', (req, res) => {
